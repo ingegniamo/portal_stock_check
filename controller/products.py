@@ -47,10 +47,7 @@ class CustomerPortal(portal.CustomerPortal):
         product = kw.get('name')
         domain = [('company_ids','in',request.env.user.company_ids.ids)]
         if product:
-            res = request.env['product.product'].sudo().search_read(
-                domain+[('name','ilike',product)],fields=['display_name','qty_available'])
-            return res
-        else:
-            res = request.env['product.product'].sudo().search_read(
-                domain+[('qty_available','>',0)],fields=['display_name','qty_available'])
-            return res
+            domain +=[('name','ilike',product)]
+        res = request.env['product.product'].sudo().search_read(
+            domain,fields=['display_name','qty_available'])
+        return res
