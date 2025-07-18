@@ -32,8 +32,7 @@
     'website': "https://www.cybrosys.com",
     'images': ['static/description/banner.png'],
     'license': 'LGPL-3',
-    'depends': ['portal', 'sale_management', 'stock', 'contacts',
-                'website_sale'],
+    'depends': ['portal', 'sale_management', 'stock', 'contacts'],
 
     'data': [
         'views/portal_inherited.xml',

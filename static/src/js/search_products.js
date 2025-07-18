@@ -15,6 +15,7 @@ publicWidget.registry.SearchBar = publicWidget.Widget.extend({
     },
     init: function () {
             this._super.apply(this, arguments);
+        this._product_search(false);
     },
     _product_search: function (ev) {
         var product_name = $('#product_name_input').val();
