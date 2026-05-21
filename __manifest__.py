@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# STeSI Consulting - Michele Di Croce
+# License OPL-1 (https://www.odoo.com/documentation/user/19.0/legal/licenses/licenses.html).
 #############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
@@ -22,7 +23,7 @@
 
 {
     'name': "Portal Product Availability",
-    'version': '16.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Sales',
     'summary': """Portal Product Availability""",
     'description': """Portal Users Can Check The Availability of Products""",
@@ -44,7 +45,5 @@
             'portal_stock_check/static/src/xml/product_list.xml'
         ],
     },
-    'installable': True,
     'auto_install': False,
-    'application': False,
 }
